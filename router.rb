@@ -20,8 +20,8 @@ class Router
 
   def route_action(action)
     case action
-    when ? then @controller.help
-    when X then stop
+    when "?" then @controller.help
+    when "X" then stop
     end
   end
 

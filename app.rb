@@ -1,4 +1,4 @@
-require_relative 'controller'
+require_relative 'lib/controller'
 require_relative 'router'
 
 controller = Controller.new
