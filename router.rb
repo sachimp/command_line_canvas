@@ -26,6 +26,7 @@ class Router
   end
 
   def stop
+    puts "Goodbye"
     @running = false
   end
 
