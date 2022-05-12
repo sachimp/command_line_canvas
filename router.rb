@@ -11,7 +11,7 @@ class Router
     while @running
       display_message
       action = gets.chomp.upcase
-      print 'clear'
+      print `clear`
       route_action(action)
     end
   end
