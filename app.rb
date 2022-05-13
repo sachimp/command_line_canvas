@@ -1,8 +1,11 @@
 require_relative 'lib/controller'
-require_relative 'router'
 
 view = View.new
-controller = Controller.new(view)
-router = Router.new(controller)
 
-router.run
+puts "Welcome to Sachin Painter (tm)!"
+answer = view.ask_for_next_action
+
+until answer == "X"
+
+
+end
