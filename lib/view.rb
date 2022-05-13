@@ -23,7 +23,7 @@ class View
     height = height
     canvas = [width] * height
     canvas.each do |row|
-      p row.join
+      puts row.join
     end
   end
 end
