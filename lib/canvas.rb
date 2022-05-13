@@ -3,8 +3,11 @@ class Canvas
 
   def initialize(height, width)
     @height = height
-    @width = width
-    # @width = ("O" * width).chars
+    @width = ("O" * width).chars
+  end
+
+  def build
+    [@width] * @height
   end
 
 end
