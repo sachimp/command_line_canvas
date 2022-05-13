@@ -9,4 +9,8 @@ class View
       puts option
     end
   end
+
+  def invalid(message)
+    puts "Invalid. #{message}"
+  end
 end

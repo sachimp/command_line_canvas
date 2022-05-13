@@ -11,6 +11,8 @@ class Controller
   end
 
   def create(action)
-    puts "#{action}"
+    command = action.split
+    return @view.invalid("Use format I M N where M = height and N = width.") if command.count != 3
+    puts "HI"
   end
 end
