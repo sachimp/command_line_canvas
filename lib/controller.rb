@@ -9,4 +9,8 @@ class Controller
   def help
     @view.list_options
   end
+
+  def create(action)
+    puts "#{action}"
+  end
 end

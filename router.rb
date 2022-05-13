@@ -22,6 +22,7 @@ class Router
     case action
     when "?" then @controller.help
     when "X" then stop
+    when "I" then @controller.create(action)
     end
   end
 
