@@ -21,6 +21,11 @@ class Controller
     @view.message_user("canvas created: #{@canvas.height} height, #{@canvas.width} width")
   end
 
+  def color_one_pixel(action)
+    command = action.split
+    p command
+  end
+
   def display_canvas
     height = @canvas.height
     width = @canvas.width

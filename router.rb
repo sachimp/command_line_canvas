@@ -29,6 +29,8 @@ class Router
       @controller.display_canvas
     elsif action.start_with?("I")
       @controller.create(action)
+    elsif action.start_with?("L")
+      @controller.color_one_pixel(action)
     else
       puts "Sorry I didn't understand the command. Please try again."
     end
