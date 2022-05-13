@@ -19,11 +19,20 @@ class Router
   private
 
   def route_action(action)
-    case action
-    when "?" then @controller.help
-    when "X" then stop
-    when "I" then @controller.create(action)
-    end
+    # case action
+    # when "?" then @controller.help
+    # when "X" then stop
+    # when action.start_with?("I") then @controller.create(action)
+    # end
+   if action == "?"
+    @controller.help
+   elsif action == "X"
+    stop
+   elsif action.start_with?("I")
+    @controller.create(action)
+   else
+    puts "Sorry I didn't understand the command. Please try again."
+   end
   end
 
   def stop
