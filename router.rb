@@ -25,6 +25,8 @@ class Router
       @controller.help
     elsif action == "X"
       stop
+    elsif action == "S"
+      @controller.display_canvas
     elsif action.start_with?("I")
       @controller.create(action)
     else

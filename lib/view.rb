@@ -13,4 +13,17 @@ class View
   def invalid(message)
     puts "Invalid. #{message}"
   end
+
+  def message_user(message)
+    puts "#{message}"
+  end
+
+  def show_canvas(height, width)
+    width = ("O" * width).chars
+    height = height
+    canvas = [width] * height
+    canvas.each do |row|
+      p row.join
+    end
+  end
 end
