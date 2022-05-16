@@ -1,7 +1,7 @@
 class Canvas
   attr_accessor :height, :width, :canvas
 
-  def initialize(height, width)
+  def initialize(height = 0, width = 0)
     @height = height
     @width = ("O" * width).chars
     @canvas = [@width] * @height
@@ -12,7 +12,6 @@ class Canvas
       puts row.join
     end
   end
-
 end
 
 test = Canvas.new(3, 9)

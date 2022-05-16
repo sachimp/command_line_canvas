@@ -6,7 +6,7 @@ class Controller
 
   def initialize(view)
     @view = view
-    @canvas = Canvas.new(0, 0)
+    @canvas = Canvas.new
   end
 
   def help
@@ -18,7 +18,7 @@ class Controller
     return @view.invalid("Use format I M N where M = height and N = width.") if command.count != 3 || command[1].to_i == 0 || command[2].to_i == 0
     @canvas.height = command[1]
     @canvas.width = command[2]
-    # p @canvas.build
+    p @canvas.build
     @view.message_user("canvas created: #{@canvas.height} height, #{@canvas.width} width")
   end
 
@@ -32,3 +32,15 @@ class Controller
     # p @canvas
   end
 end
+
+test = Controller.new(View.new)
+p test.canvas
+
+test.canvas.height = 2
+test.canvas.width = 5
+p test.canvas.canvas
+p test.canvas.build
+
+p test.canvas
+
+p test.canvas.build
